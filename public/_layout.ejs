@@ -26,7 +26,30 @@
     <div class="container">
       <div class="row">
         <div class="content bordered-wrapper col-sm-12 col-md-10 col-md-offset-1">
-          <%- yield %>
+          <div class="row">
+            <aside class="content-sidebar col-sm-3 hidden-xs">
+              <nav class="nav nav-book">
+                <h3 class="nav-title">The Book</h3>
+                <ul>
+                  <li><a href="#">About</a></li>
+                  <li><a href="#">Reviews</a></li>
+                  <li><a href="#">Excerpts</a></li>
+                  <li><a href="#">Purchase</a></li>
+                </ul>
+              </nav> <!-- /.nav nav-book -->
+              <nav class="nav nav-author">
+                <h3 class="nav-title">The Author</h3>
+                <ul>
+                  <li><a href="#">Biography</a></li>
+                  <li><a href="#">Events</a></li>
+                  <li><a href="#">Media</a></li>
+                  <li><a href="#">Blog</a></li>
+                  <li><a href="#">Contacts</a></li>
+                </ul>
+              </nav> <!-- /.nav nav-author -->
+            </aside> <!-- /.content-sidebar col-sm-3 -->
+            <%- yield %>
+          </div> <!-- /.row -->
           <div class="corner corner-tl"></div> <!-- /.corner corner-tl -->
           <div class="corner corner-tr"></div> <!-- /.corner corner-tr -->
           <div class="corner corner-br"></div> <!-- /.corner corner-br -->
