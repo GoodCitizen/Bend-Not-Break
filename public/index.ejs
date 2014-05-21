@@ -1,9 +1,8 @@
-<h1>Fifth Letter</h1>
-
-<div class="post-box-wrap">
-  <% for(post in public.posts._data) { %>
-  <a class="post-box" href="<%= post %>">
-    <h2><%= public.posts._data[post].title %></h2>
-  </a>
-  <% } %>
-</div>
+<div class="row">
+  <aside class="content-sidebar col-xs-3">
+    <p>This is the sidebar.</p>
+  </aside> <!-- /.content-sidebar col-xs-3 -->
+  <main class="content-main col-xs-9">
+    <h1>This is the main content section.</h1>
+  </main> <!-- /.content-main col-xs-9 -->
+</div> <!-- /.row -->

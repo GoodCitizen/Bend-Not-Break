@@ -22,65 +22,57 @@
 
 /* Brand Colors
 ================================================== */
-@red:       #b44647;
-@orange:    #e18728;
-@purple:    #9351a6;
+@brand-red:       #ED2024;
 
-/* Custom Mixins */
+/* Custom Mixins
+================================================== */
+
 
 /* Global Styles
 ================================================== */
-/* Header ----------------- */
-
-/* Navigation ----------------- */
-
-/* Home Page ----------------- */
-.post-box-wrap{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  height: auto;
-  width: 1040px;
+.bordered-wrapper {
+  position: relative;
+  border: 7px solid @brand-red;
+  .corner {
+    width: 19px;
+    height: 19px;
+    position: absolute;
+    background: url(../img/bg-corner.png) no-repeat;
+    z-index: 10;
+    &.corner-tl {
+      top: -7px;
+      left: -7px;
+    }
+    &.corner-tr {
+      top: -7px;
+      right: -7px;
+      .rotate(90deg);
+    }
+    &.corner-br {
+      bottom: -7px;
+      right: -7px;
+      .rotate(180deg);
+    }
+    &.corner-bl {
+      bottom: -7px;
+      left: -7px;
+      .rotate(270deg);
+    }
+  }
 }
-.post-box{
-  display: inline-block;
-  float: left;
-  margin: 5px;
-  height: 250px;
-  width: 250px;
-  background: fade(@red, 50%);
-  &:hover{
-    text-decoration: none;
-    background: darken(@red, 30%)
-  }
-  h2{
-    line-height: 225px;
-    vertical-align: center;
-    text-align: center;
-  }
-  &:nth-child(2){
-    height: 250px;
-    width: 510px;
-    background: fade(@orange, 50%);
-    &:hover{
-      background: darken(@orange, 30%)
-    }
-  }
-  &:nth-child(4){
-    height: 510px;
-    width: 250px;
-    background: fade(@purple, 50%);
-    &:hover{
-      background: darken(@purple, 30%)
-    }
-  }
-  &:nth-child(6){
-    height: 250px;
-    width: 510px;
-    background: fade(@orange, 50%);
-    &:hover{
-      background: darken(@orange, 30%)
-    }
-  }
 
+.content-sidebar,
+.content-main {
+  height: 800px; // just for testing
 }
+
+.content-main {
+  background: #fff;
+}
+
+
+/* --------------------------------------------------
+
+  HOME
+
+-------------------------------------------------- */

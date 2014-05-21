@@ -24,20 +24,26 @@
     <![endif]-->
 
     <div class="container">
-
-      <%- yield %>
+      <div class="row">
+        <div class="content bordered-wrapper col-sm-12 col-md-10 col-md-offset-1">
+          <%- yield %>
+          <div class="corner corner-tl"></div> <!-- /.corner corner-tl -->
+          <div class="corner corner-tr"></div> <!-- /.corner corner-tr -->
+          <div class="corner corner-br"></div> <!-- /.corner corner-br -->
+          <div class="corner corner-bl"></div> <!-- /.corner corner-bl --> 
+        </div> <!-- /.col-sm-12 col-md-10 col-md-offset-1 -->
+      </div> <!-- /.row -->
+      
 
     </div>
     <footer>
       <div class="container">
         <div class="row">
           <div class="col-sm-6">
-            <p><small>&copy; 2013 <%= site_title %></small></p>
+            <p><small>&copy; 2014 <%= site_title %></small></p>
           </div>
           <div class="col-sm-6">
-            <p class="pull-right">
-              <small><a href="/rss.xml" title="<%= site_title %> RSS feed">RSS feed</a>
-            </p>
+            <p class="pull-right"></p>
           </div>
         </div>
       </div>
