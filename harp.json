@@ -1,0 +1,12 @@
+{
+  "domains": [""],
+  "globals": {
+    "site_title": "Bend Not Break",
+    "twitter": "@HarpPlatform",
+    "site_url": "http://localhost:3000",
+    "disqus": {
+      "show": false,
+      "shortname": ""
+    }
+  }
+}

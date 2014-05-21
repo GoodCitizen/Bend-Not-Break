@@ -1,0 +1,9 @@
+<h1>Fifth Letter</h1>
+
+<div class="post-box-wrap">
+  <% for(post in public.posts._data) { %>
+  <a class="post-box" href="<%= post %>">
+    <h2><%= public.posts._data[post].title %></h2>
+  </a>
+  <% } %>
+</div>

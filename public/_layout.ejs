@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title><%= site_title %></title>
+
+    <!-- META
+    ================================================== -->
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="<%= site_url %>/assets/css/app.css">
+
+    <!-- RSS
+    ================================================== -->
+    <link rel="alternate" type="application/rss+xml" title="Fifth Letter RSS" href="/rss.xml">
+  </head>
+  <body class="page=<%- current.path[0] %>">
+    <!--[if lt IE 8]>
+      <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+    <![endif]-->
+
+    <div class="container">
+
+      <%- yield %>
+
+    </div>
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6">
+            <p><small>&copy; 2013 <%= site_title %></small></p>
+          </div>
+          <div class="col-sm-6">
+            <p class="pull-right">
+              <small><a href="/rss.xml" title="<%= site_title %> RSS feed">RSS feed</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JS
+    ================================================== -->
+    <script src="<%= site_url %>/assets/js/bootstrap.min.js"></script>
+    <script src="<%= site_url %>/assets/js/app.js"></script>
+
+  </body>
+</html>

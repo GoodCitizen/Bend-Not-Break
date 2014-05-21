@@ -1,0 +1,86 @@
+/* Table of Contents
+=====================================================
+  BOOTSTRAP...........Import Bootstrap styles
+  SITEWIDE STYLES.....Global styles
+  PAGE STYLES.........Styles on a per page/section basis
+  FONT-FACE...........Import brand font files
+  BROWSER DEBUGGING...Making crappy browsers behave
+*/
+
+/* --------------------------------------------------
+
+  BOOTSTRAP
+
+-------------------------------------------------- */
+@import '_bootstrap';
+
+/* --------------------------------------------------
+
+  SITEWIDE STYLES
+
+-------------------------------------------------- */
+
+/* Brand Colors
+================================================== */
+@red:       #b44647;
+@orange:    #e18728;
+@purple:    #9351a6;
+
+/* Custom Mixins */
+
+/* Global Styles
+================================================== */
+/* Header ----------------- */
+
+/* Navigation ----------------- */
+
+/* Home Page ----------------- */
+.post-box-wrap{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
+  width: 1040px;
+}
+.post-box{
+  display: inline-block;
+  float: left;
+  margin: 5px;
+  height: 250px;
+  width: 250px;
+  background: fade(@red, 50%);
+  &:hover{
+    text-decoration: none;
+    background: darken(@red, 30%)
+  }
+  h2{
+    line-height: 225px;
+    vertical-align: center;
+    text-align: center;
+  }
+  &:nth-child(2){
+    height: 250px;
+    width: 510px;
+    background: fade(@orange, 50%);
+    &:hover{
+      background: darken(@orange, 30%)
+    }
+  }
+  &:nth-child(4){
+    height: 510px;
+    width: 250px;
+    background: fade(@purple, 50%);
+    &:hover{
+      background: darken(@purple, 30%)
+    }
+  }
+  &:nth-child(6){
+    height: 250px;
+    width: 510px;
+    background: fade(@orange, 50%);
+    &:hover{
+      background: darken(@orange, 30%)
+    }
+  }
+
+}
