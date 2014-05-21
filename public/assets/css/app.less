@@ -14,6 +14,10 @@
 -------------------------------------------------- */
 @import '_bootstrap';
 
+
+
+
+
 /* --------------------------------------------------
 
   SITEWIDE STYLES
@@ -24,12 +28,18 @@
 ================================================== */
 @brand-red:       #ED2024;
 
-/* Custom Mixins
-================================================== */
-
-
 /* Global Styles
 ================================================== */
+a {
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.content {
+  margin-top: 65px;
+}
+
 .bordered-wrapper {
   position: relative;
   border: 7px solid @brand-red;
@@ -66,9 +76,33 @@
   height: 800px; // just for testing
 }
 
+.content-sidebar {
+  padding-top: 100px;
+  color: #fff;
+  background: #000;
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+  .nav {
+    a {
+      color: #fff;
+    }
+  }
+  .nav-title {
+    font: 28px @font-family-serif;
+    letter-spacing: 0.1em;
+    color: @brand-red;
+  }
+}
+
 .content-main {
   background: #fff;
 }
+
+
+
 
 
 /* --------------------------------------------------
@@ -76,3 +110,36 @@
   HOME
 
 -------------------------------------------------- */
+
+
+
+
+
+/* --------------------------------------------------
+
+  FONT-FACE
+
+-------------------------------------------------- */
+
+/* @license
+ * MyFonts Webfont Build ID 2369118, 2012-09-20T14:31:22-0400
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: Didot Headline Demi by Canada Type
+ * URL: http://www.myfonts.com/fonts/canadatype/didot-headline/demi/
+ * Copyright: Copyright &#x00A9; 2009 Bill Troop. Published by Canada Type. All rights reserved.
+ * Licensed pageviews: 10,000
+ * 
+ * 
+ * License: http://www.myfonts.com/viewlicense?type=web&buildid=2369118
+ * 
+ * © 2012 Bitstream Inc
+*/
+  
+ @font-face {font-family: 'DidotHeadlineDemi';src: url('../fonts/didot-headline-demi/24265E_0_0.eot');src: url('../fonts/didot-headline-demi/24265E_0_0.eot?#iefix') format('embedded-opentype'),url('../fonts/didot-headline-demi/24265E_0_0.woff') format('woff'),url('../fonts/didot-headline-demi/24265E_0_0.ttf') format('truetype');}
+
