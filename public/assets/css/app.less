@@ -36,8 +36,45 @@ a {
   }
 }
 
+.page-quote {
+  margin: 0 auto 50px;
+  width: 90%;
+  text-align: center;
+  border: none;
+  p {
+    font: bold 14px @font-family-serif-alt;
+  }
+  footer {
+    font-family: @font-family-serif;
+    font-style: italic;
+    color: @brand-red;
+    strong {
+      font-style: normal;
+      text-transform: uppercase;
+    }
+  }
+}
+
+.wrapper-video {
+  padding-top: 25px;
+  padding-bottom: 56.25%; /* 16:9 */
+  padding-bottom: 75%; /* 4:3 */
+  position: relative;
+  height: 0;
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+/* Primary Layout
+================================================== */
 .content {
   margin-top: 65px;
+  background: #000; /* just in case content-sidebar is shorter than content-main, background will stay black */
 }
 
 .bordered-wrapper {
@@ -73,31 +110,40 @@ a {
 
 .content-sidebar,
 .content-main {
-  height: 800px; // just for testing
+  
 }
 
 .content-sidebar {
-  padding-top: 100px;
+  padding: 100px 30px 0;
   color: #fff;
   background: #000;
-  ul {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
+  a {
+    color: #fff;
   }
   .nav {
-    a {
-      color: #fff;
+    margin-bottom: 25px;
+    font-family: @font-family-serif;
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+    }
+    li {
+      padding: 5px 0;
+      font-size: 16px;
+      text-transform: uppercase;
+      letter-spacing: 0.2em;
     }
   }
   .nav-title {
-    font: 28px @font-family-serif;
+    font-size: 28px;
     letter-spacing: 0.1em;
     color: @brand-red;
   }
 }
 
 .content-main {
+  padding: 50px 0;
   background: #fff;
 }
 
@@ -110,7 +156,19 @@ a {
   HOME
 
 -------------------------------------------------- */
+.page-index {
+  .wrapper-video {
+    margin: 0 auto;
+    width: 90%;
+  }
+  .content-sidebar {
+    padding-top: 40px;
+  }
+}
 
+.book-cover-home {
+  text-align: center;
+}
 
 
 
