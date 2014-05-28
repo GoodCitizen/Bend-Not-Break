@@ -31,6 +31,9 @@
 /* Global Styles
 ================================================== */
 a {
+  font-weight: bold;
+  text-decoration: underline;
+  color: #000;
   &:hover {
     text-decoration: none;
   }
@@ -134,6 +137,8 @@ img.pull-left { margin-right: 20px; }
   color: #fff;
   background: #000;
   a {
+    font-weight: normal;
+    text-decoration: none;
     color: #fff;
   }
   .book-burst {
@@ -174,9 +179,12 @@ img.pull-left { margin-right: 20px; }
 
 /* --------------------------------------------------
 
-  HOME
+  PAGE STYLES
 
 -------------------------------------------------- */
+
+/* Home
+================================================== */
 .page-index {
   .book-burst {
     display: none;
@@ -191,6 +199,21 @@ img.pull-left { margin-right: 20px; }
   text-align: center;
 }
 
+/* Reviews
+================================================== */
+.review {
+  font-size: 14px;
+  a {
+    font-size: 13px;
+  }
+  footer {
+    font-size: 100%;
+    font-family: @font-family-serif-alt;
+    cite {
+      font-style: italic;
+    }
+  }
+}
 
 
 
