@@ -121,9 +121,12 @@ img.pull-left { margin-right: 20px; }
 /* Primary Layout
 ================================================== */
 .content {
-  margin-top: 65px;
+  margin-top: 10px;
   margin-bottom: 65px;
   background: #000; /* just in case content-sidebar is shorter than content-main, background will stay black */
+  @media (min-width: @screen-sm-min) {
+    margin-top: 65px;
+  }
 }
 
 .bordered-wrapper {
@@ -182,8 +185,12 @@ img.pull-left { margin-right: 20px; }
 }
 
 .mobile-nav {
+  margin-top: 10px;
+  margin-bottom: 10px;
   .nav-title {
     position: relative; // for positioning the :after psuedo element
+    font-size: 20px;
+    cursor: pointer;
     &:after {
       content: "+";
       position: absolute;
@@ -194,6 +201,14 @@ img.pull-left { margin-right: 20px; }
   }
   .nav-list {
     display: none;
+    a {
+      font-size: 12px;
+      color: #fff;
+      text-decoration: none;
+    }
+    &.active {
+      display: block;
+    }
   }
 }
 
