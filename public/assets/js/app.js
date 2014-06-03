@@ -1,9 +1,17 @@
 (function ($) {
   // Mobile nav toggle
   $('.nav-toggle').click(function() {
+    var navToggleText = $('.nav-wrapper').is(':visible') ? 'menu' : 'close menu';
+    $(this).text(navToggleText);
     $(this).toggleClass('active');
     $('.nav-wrapper').toggleClass('active');
     return false;
+  });
+
+  $("#more-less-options-button").click(function() {
+       var txt = $("#extra-options").is(':visible') ? 'more options' : 'less options';
+       $("#more-less-options-button").text(txt);
+       $("#extra-options").slideToggle();
   });
 
   // Mobile nav accordion
