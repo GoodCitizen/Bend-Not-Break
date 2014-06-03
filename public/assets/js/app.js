@@ -1,4 +1,11 @@
 (function ($) {
+  // Mobile nav toggle
+  $('.nav-toggle').click(function() {
+    $(this).toggleClass('active');
+    $('.nav-wrapper').toggleClass('active');
+    return false;
+  });
+
   // Mobile nav accordion
   $('.mobile-nav .nav-title').on('click',function(){
     var $this = $(this),

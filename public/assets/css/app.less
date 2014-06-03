@@ -185,8 +185,27 @@ img.pull-left { margin-right: 20px; }
 }
 
 .mobile-nav {
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 15px;
+  margin-bottom: 3px;
+  .nav-toggle {
+    margin-left: -12px;
+    margin-right: -12px;
+    padding: 15px 0;
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: @brand-red;
+    &:hover {
+      color: #fff;
+    }
+  }
+  .nav-wrapper {
+    display: none;
+    &.active {
+      display: block;
+    }
+  }
   .nav-title {
     position: relative; // for positioning the :after psuedo element
     font-size: 20px;
