@@ -272,7 +272,19 @@ img.pull-left { margin-right: 20px; }
 /* Reviews
 ================================================== */
 .review {
+  padding-top: 40px;
+  padding-left: 35px;
+  position: relative; // for positioning the :before content
   font-size: 14px;
+  border: none;
+  &:before {
+    content: '\201C';
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 70px;
+    color: @gray-light;
+  }
   a {
     font-size: 13px;
   }
