@@ -35,6 +35,7 @@ a {
   text-decoration: underline;
   color: #000;
   &:hover {
+    color: @brand-red;
     text-decoration: none;
   }
 }
@@ -101,6 +102,15 @@ a {
 
 .title {
   font-family: @font-family-serif;
+  a {
+    font-weight: normal;
+    text-decoration: none;
+    &:hover,
+    &:focus,
+    &:active {
+      color: #000;
+    }
+  }
   &.title-primary {
     font-size: 34px;
     letter-spacing: .05em;
@@ -190,6 +200,7 @@ img.pull-left { margin-right: 20px; }
 
 .content-main {
   padding: 20px;
+  min-height: 1000px;
   background: #fff url(/assets/img/bg-content-main.jpg) no-repeat;
   @media (min-width: @screen-sm-min) {
     padding: 50px;
@@ -265,8 +276,9 @@ img.pull-left { margin-right: 20px; }
 }
 
 .book-cover-home {
-  margin-bottom: 50px;
-  text-align: center;
+  img {
+    margin: 0 auto 50px;
+  }
 }
 
 /* Reviews
