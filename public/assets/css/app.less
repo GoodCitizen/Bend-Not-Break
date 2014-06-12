@@ -293,6 +293,7 @@ img.pull-left { margin-right: 20px; }
   }
 }
 
+
 /* Reviews
 ================================================== */
 .review {
@@ -320,6 +321,43 @@ img.pull-left { margin-right: 20px; }
     }
   }
 }
+
+
+/* Excerpts
+================================================== */
+#contents-tabs {
+  &.nav {
+    li {
+      padding: 5px 0 0;
+    }
+  }
+  &.nav-tabs {
+    > li {
+      > a {
+        color: #555;
+        border-radius: 0;
+      }
+    }
+    > li.active > a,
+    > li.active > a:hover,
+    > li.active > a:focus {
+      color: #000;
+      background: none;
+    }
+  }
+}
+
+#table-of-contents {
+  td {
+    padding: 5px 0;
+    width: 50%;
+  }
+  tr:nth-child(even) {
+    font-weight: bold;
+  }
+}
+
+
 
 
 
